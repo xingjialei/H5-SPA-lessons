@@ -1,3 +1,4 @@
+/*简单计算*/
 function account(){
   var width = document.getElementById('rec__width').value;
   var height = document.getElementById('rec__height').value;
@@ -5,4 +6,9 @@ function account(){
   var bb = width * height;
   document.getElementById('rec__area').value = bb;
   document.getElementById('rec__perimeter').value = aa;
+}
+
+/*页面加载完成后自动获得焦点*/
+window.onload = function(){
+  document.getElementById('rec__width').focus();
 }
