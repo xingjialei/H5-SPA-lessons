@@ -1,7 +1,6 @@
 /*简单计算*/
 function account(){
-  var width = document.getElementById('rec__width').value;
-  console.log(width);
+  var width = document.getElementById('rec__width').value; 
   var height = document.getElementById('rec__height').value;
   var aa = width * 2 + height * 2;
   var bb = width * height;
