@@ -1,14 +1,19 @@
 window.onload = function(){
   var num;
+  var a = 0;
   function start(){
-    num = setInterval(function(){
-      document.getElementById('range').value = document.getElementById('range').value + 1;
+    a = a + 1;
+    if(a == 1){
+      num = setInterval(function(){
+        document.getElementById('range').value = document.getElementById('range').value + 1;
     },100);
-    setTimeout(function(){
-      clearInterval(num);
-    },10100);
+      setTimeout(function(){
+        clearInterval(num);
+      },10100);
+    }
   }
   function stop(){
+    a = 0;
     clearInterval(num);
   }
   function reset(){
