@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>field</title>
+  <style type="text/css">
+  #rec__perimeter{
+    background: gray;
+  }
+  #rec__area{
+    background: gray;
+  }
+  </style>
 </head>
 <body>
   <div id="rec">
     <label for="rec__width">宽度：</label>
-    <input id="rec__width" type="number"/>
+    <input id="rec__width" type="number" min="0.00001" step="0.00001" />
     <img src="" style="width:10;height:10;"/>
     </br>
     <label for="rec__height">高度：</label>
-    <input id="rec__height" type="number"/>
+    <input id="rec__height" type="number" min="0.00001" step="0.00001"/>
     <img src=""/>
     </br>
-    <input id="rec__calc" type="button" value="计算"></br>
+    <input id="rec__calc" type="button" value="计算" onclick="account()"></br>
     <label for="rec__perimeter">周长：</label>
     <input id="rec__perimeter" type="text"/></br>
     <label for="rec__area">面积：</label>
     <input id="rec__area" type="text"/>
   </div>
 </body>
+<script src="04-h5.js"></script>
 </html>

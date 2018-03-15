@@ -9,25 +9,34 @@ function account(){
   document.getElementById('rec__perimeter').value = parseFloat((aa).toFixed(10));
 }
 
-function clearText(str){
-  str.value = str.value.replace(/[^\d.]/g,"");
-}
-
 /*页面加载完成后自动获得焦点*/
 window.onload = function(){
   document.getElementById('rec__width').focus();
- 
-  /*function clearText(str){
-   str.value = str.value.replace(/[^\d.]/g,"");
-  }*/
-  /*document.getElementById('rec__width').onkeydown = function(){
-    var str = document.getElementById('rec__width').value;
-    var reg = /^[1-9]\d*$|^0$/;
-
-    if(!reg.test(str)){
-      console.log('1');
-      document.getElementById('rec__width').value = '';
-    }
-  }*/
-
 }
+
+/*按键时判断字符*/
+function func1(str){
+  preventStr(str);
+}
+function func2(str){
+  testStr(str);
+}
+
+/*字符判断*/
+function preventStr(e){
+  if(/[abcdf-zABCDF-Z`~!@#$%^&*()=_+\[\]{}|;:'",<>/?\\]/.test(e.value)){
+    e.replace('');
+  }
+}
+
+/*表单验证*/
+function testStr(str){
+  if(str.value == ''){
+    document.getElementById('one').innerHTML='不能为空';
+  }
+  if(str.value < 0){
+    document.getElementById('one').innerHTML='必须大于零';
+  }
+}
+
+

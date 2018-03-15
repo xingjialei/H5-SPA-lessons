@@ -7,9 +7,9 @@
 <body>
   <div id="rec">
     <label for="rec__width">宽度：</label>
-    <input id="rec__width" type="text" onkeydown="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/></br>
+    <input id="rec__width" type="text" onkeypress="func1(this)" onfocusout="func2(this)"/></br>
     <label for="rec__height">高度：</label>
-    <input id="rec__height" type="text"/></br>
+    <input id="rec__height" type="text"/ onkeypress="func1(this)" onfocusout="func2(this)"></br>
     <input id="rec__calc" type="button" value="计算"></br>
     <label for="rec__perimeter">周长：</label>
     <input id="rec__perimeter" type="text"/></br>

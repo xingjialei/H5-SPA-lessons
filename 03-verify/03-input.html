@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <title>field</title>
 </head>
+<style type="text/css">
+  #one{
+    color:red;
+  }
+  #two{
+    color:red;
+  }
+</style>
 <body>
   <div id="rec">
     <label for="rec__width">宽度：</label>
     <input id="rec__width" type="text"/></br>
+    <span id="one"></span></br>
     <label for="rec__height">高度：</label>
     <input id="rec__height" type="text"/></br>
-    <input id="rec__calc" type="button" value="计算"></br>
+    <span id="two"></span></br>
+    <input id="rec__calc" type="button" value="计算" onclick="testStr()"></br>
     <label for="rec__perimeter">周长：</label>
     <input id="rec__perimeter" type="text"/></br>
     <label for="rec__area">面积：</label>
     <input id="rec__area" type="text"/>
   </div>
 </body>
+<script src="03-input.js"></script>
 </html>
