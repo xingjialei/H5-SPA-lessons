@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>field</title>
+</head>
+<body>
+  <div id="rec">
+    <label for="rec__width">宽度：</label>
+    <input id="rec__width" type="text" onkeydown="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/></br>
+    <label for="rec__height">高度：</label>
+    <input id="rec__height" type="text"/></br>
+    <input id="rec__calc" type="button" value="计算"></br>
+    <label for="rec__perimeter">周长：</label>
+    <input id="rec__perimeter" type="text"/></br>
+    <label for="rec__area">面积：</label>
+    <input id="rec__area" type="text"/>
+  </div>
+</body>
+<script src="02-chars.js"></script>
+<!--<script>
+window.onload = function(){
+
+  document.getElementById('rec__width').onkeypress = function(){
+    var text = document.getElementById('rec__width').value;
+    var reg = /^[1-9]\d*$|^0$/;
+
+    if(!reg.test(text)){
+     console.log('1');
+     document.getElementById('rec__width').value = '';
+    }
+  }
+
+  document.getElementById('rec__width')
+}
+</script>-->
+</html>
