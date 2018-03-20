@@ -6,17 +6,19 @@ for(let i=0;i<=1;i+=0.1){
 }
 
 function h(p) {
-	return -1 * (plog(p) + plog(1 - p));
-	}
-	function plog(p) {
-		return (p === 0)? 0 : p * Math.log2(p);
-	}
-	function roundFractional(x, n) {
-	return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
-	}
+    return -1 * (plog(p) + plog(1 - p));
+}
+function plog(p) {
+	return (p === 0)? 0 : p * Math.log2(p);
+}
+function roundFractional(x, n) {
+    return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
+}
 
-	echarts.init(document.getElementById('main')).setOption({
-    title: {text: '二进熵函数曲线'},
+echarts.init(document.getElementById('main')).setOption({
+    title: {
+        text: '二进熵函数曲线'
+    },
     tooltip: {},
     legend:{
     	data:['信息量']
