@@ -12,6 +12,7 @@
 
 </html>
 <script type="text/javascript">
+/*定义初始数据*/
 var data = [
   ["login_name", "登录名", "C(9)", "N", "Y",""],
   ["password", "密码", "C(9)", "N", "N",""],
@@ -22,7 +23,7 @@ var data = [
   ["mobile", "联系电话", "C(15)", "Y", "N",""],
   ["comment", "备注", "C(100)", "Y", "N",""]
 ];
-
+/*定义handsontable对象*/
 var container = document.getElementById('example');
 var hot = new Handsontable(container, {
   data: data,
@@ -35,7 +36,9 @@ var hot = new Handsontable(container, {
     '主键',
     '备注'
   ],
+  /*调整行列*/
   manualColumnResize: true,
-  manualRowResize: true
+  manualRowResize: true,
+  /**/
 });
 </script>
