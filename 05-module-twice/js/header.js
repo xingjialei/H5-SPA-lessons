@@ -21,6 +21,8 @@ $header = (function(){
 	$menu = $headerDOM.find('.submenu'),
 	$arrow = $headerDOM.find('.account span+i');
 
+	console.log($menu);
+
 	$account.mouseover(function(){
 		$menu.css('display','block');
 		$account.css('color','black');
@@ -33,6 +35,10 @@ $header = (function(){
 		$account.css('color','#999');
 		$arrow.removeClass('icon-arrowup');
 		$arrow.addClass('icon-arrowdown');
+	})
+
+	$menu.click(function(){
+		location.hash = '#/login';
 	})
 
 	$title.html(app.config.headerTitle);

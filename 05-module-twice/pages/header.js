@@ -17,6 +17,8 @@ $(function(){
 		$arrow.addClass('icon-arrowdown');
 	})
 
+	console.log($menu);
+
 	$menu.click(function(){
 		location.hash = '#/login';
 	})
