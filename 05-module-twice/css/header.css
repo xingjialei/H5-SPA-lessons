@@ -1,0 +1,61 @@
+admin-app-header{
+	width:100%;
+	height: 65px;
+	background-color: white;
+	border-bottom: 5px solid #1aa094;
+}
+
+.admin-app-header .title{
+	width: 200px;
+}
+
+.admin-app-header .title h1{
+	font-size: 22px;
+	line-height: 65px;
+	font-weight: 400;
+}
+
+.admin-app-header .account{
+	position: absolute;
+	width: 140px;
+	top: 0;
+	right: 36px;
+	color: #999;
+	cursor: pointer;
+}
+
+.admin-app-header .account .logo{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.admin-app-header .account span{
+	line-height: 65px;
+}
+
+.admin-app-header .submenu{
+	background-color: white;
+	border: 1px solid #d2d2d2;
+	border-top: 5px solid black;
+	line-height: 50px;
+	width: 140px;
+	display: none;
+	color: #999;
+	cursor: pointer;
+}
+
+.admin-app-header .submenu:hover{
+	color: black;
+	background-color: #f2f2f2;
+}
+
+.admin-app-header .submenu span{
+	line-height: 50px;
+}
+
+.admin-app-header .submenu i{
+	margin-left: 25px;
+}
+

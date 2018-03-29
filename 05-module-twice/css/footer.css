@@ -1,0 +1,14 @@
+.admin-app-footer{
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+	height: 36px;
+	right: 0;
+	background-color: skyblue;
+}
+
+.admin-app-footer p{
+	text-align: center;
+	line-height: 36px;
+	color: 
+}

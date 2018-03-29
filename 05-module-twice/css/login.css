@@ -1,0 +1,39 @@
+#login{
+	position: relative;
+	top: 200px;
+	width: 420px;
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	border: 1px solid #c2c2c2;
+	padding-bottom: 32px;
+}
+
+#login h1{
+	font-weight: 400;
+	font-size: 26px;
+	padding-top: 32px;
+	padding-bottom: 22px;
+}
+
+#login input{
+	width: 198px;
+	height: 36px;
+	margin: 10px 0;
+	padding-left: 10px;
+	border: 1px solid #d2d2d2;
+	outline: none;
+}
+
+#login label{
+	margin-right: 10px;
+}
+
+#login input[type="submit"]{
+	line-height: 38px;
+	font-size: 14px;
+	color: white;
+	background-color: #009688;
+	padding: 0 18px;
+}
